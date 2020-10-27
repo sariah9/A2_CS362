@@ -42,6 +42,11 @@ class TestDrivenDevelopment(unittest.TestCase):
         str_val = "milk*Bone"
         self.assertFalse(check_pwd(str_val))
 
+    # seventh - test 1+ symbol
+    def test_symbol(self):
+        str_val = "m1lkBone"
+        self.assertFalse(check_pwd(str_val))
+
 
 if __name__ == '__main__':
     unittest.main()
