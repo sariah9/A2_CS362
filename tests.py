@@ -10,7 +10,15 @@ from check_pwd import check_pwd
 
 
 class TestDrivenDevelopment(unittest.TestCase):
-    pass
+    # first value = empty string
+    def test_empty(self):
+        str_val = ""
+        self.assertFalse(check_pwd(str_val))
+
+    # second - test that length >= 8
+    def test_full(self):
+        str_val = "m1lk*Bone"
+        self.assertTrue(check_pwd(str_val))
 
 
 if __name__ == '__main__':
