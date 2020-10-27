@@ -21,6 +21,12 @@ class TestDrivenDevelopment(unittest.TestCase):
         self.assertTrue(check_pwd(str_val))
 
 
+    # third - test that length <= 20
+    def test_length(self):
+        str_val = "m1lk*Bonezzzzzzzzzzzz"
+        self.assertFalse(check_pwd(str_val))
+
+
 if __name__ == '__main__':
     unittest.main()
 
