@@ -32,6 +32,12 @@ class TestDrivenDevelopment(unittest.TestCase):
         self.assertFalse(check_pwd(str_val))
 
 
+    # fifth - test 1+ uppercase letter
+    def test_lower(self):
+        str_val = "m1lk*bone"
+        self.assertFalse(check_pwd(str_val))
+
+
 if __name__ == '__main__':
     unittest.main()
 
