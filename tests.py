@@ -20,7 +20,6 @@ class TestDrivenDevelopment(unittest.TestCase):
         str_val = "m1lk*Bone"
         self.assertTrue(check_pwd(str_val))
 
-
     # third - test that length <= 20
     def test_length(self):
         str_val = "m1lk*Bonezzzzzzzzzzzz"
@@ -30,7 +29,6 @@ class TestDrivenDevelopment(unittest.TestCase):
     def test_upper(self):
         str_val = "M1LK*BONE"
         self.assertFalse(check_pwd(str_val))
-
 
     # fifth - test 1+ uppercase letter
     def test_lower(self):
