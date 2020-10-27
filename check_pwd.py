@@ -3,6 +3,9 @@ def check_pwd(password):
         # has lowercase return True
         if password.isupper():
             return False
+        # has uppercase return True
+        if password.islower():
+            return False
         return True
     return False
 
