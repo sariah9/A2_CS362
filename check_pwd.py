@@ -12,7 +12,7 @@ def check_pwd(password):
             if character.isdigit():
                 no_digit = False
         if no_digit:
-            return False        
+            return False
         # has symbol
         no_symbol = True
         symbols = ["~", "`", "!", "@", "#",
