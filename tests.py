@@ -37,6 +37,11 @@ class TestDrivenDevelopment(unittest.TestCase):
         str_val = "m1lk*bone"
         self.assertFalse(check_pwd(str_val))
 
+    # sixth - test 1+ number
+    def test_digit(self):
+        str_val = "milk*Bone"
+        self.assertFalse(check_pwd(str_val))
+
 
 if __name__ == '__main__':
     unittest.main()
