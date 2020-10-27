@@ -13,6 +13,18 @@ def check_pwd(password):
                 no_digit = False
         if no_digit:
             return False        
+        # has symbol
+        no_symbol = True
+        symbols = ["~", "`", "!", "@", "#",
+                   "$", "%", "^", "&", "*",
+                   "(", ")", "_", "+", "-", "="]
+        for idx in range(0, 15):
+            val = symbols[idx]
+            for ch in password:
+                if ch == val:
+                    no_symbol = False
+        if no_symbol:
+            return False
         return True
     return False
 
